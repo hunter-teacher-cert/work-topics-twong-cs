@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Hi, {{ user.username }}!</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
-    {% endfor %}
+<style type='text/css'>
+  body {
+    background-color: #BFF5FD
+  } 
+</style>
+
+    <h1>Hi there!</h1>
+    <div><h3>Welcome to my microblog.</h3>
+    <p> Use the navigation bar to find your way around my blog.
+    </p></div>
 {% endblock %}

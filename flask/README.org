@@ -1,7 +1,6 @@
 * Last Name: Wong
 * First Name: Tiffany
 
-## Flask Web App 
 Visit the following link to access my microblog: https://work-topics-twong-cs.twong-cs.repl.co/index.
 
 Use the navigation bar located at the top of each webpage to help you easily navigate between different routes. 

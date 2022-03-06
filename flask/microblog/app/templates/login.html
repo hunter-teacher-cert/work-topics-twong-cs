@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<style type='text/css'>
+  body {
+    background-color: #BFF5FD
+  }
+  
+  h3 {
+    color: red;
+  }
+  
+</style>
+
+{% if name != ""%}
+<h2> Welcome! {{name}}</h2>
+  {% if name == "tiffany"%}
+  <h2> Thanks for visiting my blog again.</h2>
+  {% endif %}
+{% else %}
+<h3>Please try again. </h3>
+{% endif %}
+
+<h3>{{error}}</h3>
+
+<form method="POST">
+Username <br>
+<input name="username">
+<br>
+Password <br>
+<input name="password">
+<br>
+<button>Log In</button>
+</form>
+
+{% endblock %}

@@ -1,3 +1,10 @@
-* Last Name:
-* First Name:
+* Last Name: Wong
+* First Name: Tiffany
 
+Visit the following link to access my microblog: https://work-topics-twong-cs.twong-cs.repl.co/index.
+
+Use the navigation bar located at the top of each webpage to help you easily navigate between different routes. 
+
+The login form only recognizes username "tiffany" and password "12345". All other responses will prompt an error message.
+
+The blog post contains images and saves session data of how many times you've visited read that blog post.

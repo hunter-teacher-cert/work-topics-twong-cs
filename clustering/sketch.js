@@ -46,7 +46,7 @@ function draw() {
 
 // funtion to generate line to classify training data
 function f(x) {
-  return 1/(1+Math.log(-x));
+  return 1/(1+Math.E**(-x));
 }
 
 // function to check if point is above or below line

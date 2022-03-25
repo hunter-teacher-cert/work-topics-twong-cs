@@ -1,6 +1,7 @@
 * Last Name: Wong
 * First Name: Tiffany
 
+Meeting #1:
 - liked Liam's code along
 
 intro discussion (10-15 minutes)
@@ -16,5 +17,20 @@ code alongs for ciphers (15 mins each --> 30 mins total)
 - breakout room to whiteboard algorithm for caesar cipher
 - hw can be to write decryption of caesar cipher? (mild challenge - give key; spicy challenge - guess the key)
 
+
+
+Meeting #2:
+async: non-coding piece
+- research a time in history or current events where ciphers were used (ex: Navajo during WWII) & how you can bring it into the classroom
+
+homework: 
+- mild: decrypting caesar cipher
+- medium: decrypting vigenere
+- caliente: enigma machine
+- habanero: ???
+
+TO DO: post slides at beginning of session & create one-pager for async&hw
+
 - Jiyoon - vigenere
-- Eduardo & Tiffany - caesar/substitution
+- Eduardo - intro & substitution
+- Tiffany - caesar

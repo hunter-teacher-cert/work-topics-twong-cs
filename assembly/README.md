@@ -31,6 +31,7 @@ The program solicits for an input value, stores it in memory cell #99, solicits 
 
 ## Async Work #2 Mild Version
 Write an LMC program that takes two inputs and produces the larger of the two values as an output. <br>
+
 `INP` <br>
 `STA 90` <br>
 `INP` <br>
@@ -43,6 +44,44 @@ Write an LMC program that takes two inputs and produces the larger of the two va
 `LDA 91` <br>
 `OUT` <br>
 `HLT` <br>
+`LDA 90` <br>
+`OUT` <br>
+`HLT` <br>
+
+## Async Work #2 Medium Version
+Write a Little Man program that accepts three values as input and returns the largest of the 3. <br> *Hint*: The pseudo code for this might look as follows:
+- read input into addresses M0, M1, M2
+- if M1 > M2, replace value in M2 with value in M1
+- if M0 > M2, replace value in M2 with value in M0
+- output M2<br>
+
+`INP` <br>
+`STA 90` <br>
+`INP` <br>
+`STA 91` <br>
+`INP` <br>
+`STA 92` <br>
+`LDA 90` <br>
+`SUB 91` <br>
+`BRP 23` <br>
+`LDA 92` <br>
+`SUB 90` <br>
+`BRP 16` <br>
+`HLT` <br>
+`LDA 92` <br>
+`OUT` <br>
+`HLT` <br>
+`LDA 91` <br>
+`SUB 92` <br>
+`BRP 27` <br>
+`BRA 12` <br>
+`LDA 91` <br>
+`OUT` <br>
+`HLT` <br>
+`LDA 90` <br>
+`SUB 92` <br>
+`BRP 34` <br>
+`BRA 9` <br>
 `LDA 90` <br>
 `OUT` <br>
 `HLT` <br>

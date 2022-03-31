@@ -1,5 +1,5 @@
-#in class example is just encrypting uppercase letters?
-
+#In Class Demo
+#encrypt letters such that capital Z shifted 1 is capital A and lowercase z shifted 1 is lowercase a
 def encrypt(text,s):
   result = ""
      # traverse the plain text
@@ -39,7 +39,7 @@ def decrypt(text,s):
       result += chr((ord(char) - 97 - s) % 26 + 97)
   return result
 
-#write a decryption cipher??
+#Homework Bell Pepper Version: Write a function that decrypts a symmetric cipher with a given shift
 text = "BAba"
 s = 27
 

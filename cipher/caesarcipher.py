@@ -1,40 +1,48 @@
+#in class example is just encrypting uppercase letters?
+
 def encrypt(text,s):
   result = ""
-     # transverse the plain text
+     # traverse the plain text
   for i in range(len(text)):
     char = text[i]
     # Encrypt uppercase characters in plain text  
     if (char.isupper()):
-      result += chr((ord(char) + s-65) % 26 + 65)
-    # Encrypt lowercase characters in plain text
+      #convert the letter into unicode
+      #make A unicode 0 by subtracting 65
+      #add shift
+      #allow wraparound by mod 26
+      #make A's unicode 65 again by adding 65
+      #convert back from unicode to letter
+      result += chr((ord(char) - 65 + s) % 26 + 65)
+    # Encrypt lowercase characters in plain text  
     else:
-      result += chr((ord(char) + s-97) % 26 + 97)
+      result += chr((ord(char) - 97 + s) % 26 + 97)
   return result
 
 #enter alphabetic text without spaces and a desired shift
-text = "CAESARCIPHERDEMO"
-s = 4
+text = "AZaz"
+s = 27
 
 print("Plain Text : " + text)
 print("Shift pattern : " + str(s))
 print("Cipher: " + encrypt(text,s))
-
-#write a decryption cipher??
-text = "GEIWIVGMTLIVHIQS"
+print()
 
 def decrypt(text,s):
   result = ""
      # transverse the plain text
   for i in range(len(text)):
     char = text[i]
-    # Encrypt uppercase characters in plain text  
     if (char.isupper()):
-      result = result + chr((ord(char) - s-65) % 26 + 65)
-    # Encrypt lowercase characters in plain text
+      result += chr((ord(char) - 65 - s) % 26 + 65)
     else:
-      result = result + chr((ord(char) - s-97) % 26 + 97)
+      result += chr((ord(char) - 97 - s) % 26 + 97)
   return result
-#mild async - given key
-s = 4
 
-#spicy async - guess the key
+#write a decryption cipher??
+text = "BAba"
+s = 27
+
+print("Plain Text : " + text)
+print("Shift pattern : " + str(s))
+print("Cipher: " + decrypt(text,s))

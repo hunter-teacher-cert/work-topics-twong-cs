@@ -115,7 +115,7 @@ print(blockchain.chain)
 print()
 
 blockchain.new_transaction("Britney Spears", "Olivia Rodrigo", '1BTC')
-blockchain.new_block(proof2)
+blockchain.new_block(proof3)
 print(blockchain.chain)
 print()
 #Note:(optional) You may add any formating sybmols to show how the chain looks at each phase

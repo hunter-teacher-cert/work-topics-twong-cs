@@ -6,8 +6,9 @@ def encrypt(text,s):
     char = text[i]
   # traverse the plain text
     if(char.isupper()):
-      
-      result += chr((ord(char) - 65 + s) % 26 + 65)
+      #chr(84) = T
+      #ord(T) = 84
+      result += chr((ord(char) + s - 65) % 26 + 65)
     else:
     # Async Work: Encrypt lowercase characters in plain text
       result += "replace me with code"
@@ -15,7 +16,7 @@ def encrypt(text,s):
 
 #enter alphabetic text without spaces and a desired shift
 text = "AZaz"
-s = 27
+s = 1
 
 print("Plain Text : " + text)
 print("Shift pattern : " + str(s))
@@ -30,6 +31,6 @@ def decrypt(text,s):
   result = ""
   return result
 
-print("Encrypted Text : " + text)
-print("Shift pattern : " + str(s))
-print("Decrypted Text: " + decrypt(text,s))
+#print("Encrypted Text : " + text)
+#print("Shift pattern : " + str(s))
+#print("Decrypted Text: " + decrypt(text,s))

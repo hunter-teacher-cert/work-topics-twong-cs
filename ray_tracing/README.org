@@ -1,3 +1,10 @@
 * Last Name: Wong
 * First Name: Tiffany
 
+https://raytracer-js.twong-cs.repl.co
+
+# Homework Task 1
+https://raytracer-js.twong-cs.repl.co/examples/hunter.html 
+
+# Homework Task 2
+https://raytracer-js.twong-cs.repl.co/examples/hunter2.html
